@@ -126,7 +126,7 @@
       <annotations annotationType="ManyToOne"/>
     </attributes>
     <attributes name="base" type="//@types.18">
-      <annotations annotationType="OneToOne"/>
+      <annotations annotationType="OneToOne" cascade="ALL"/>
     </attributes>
   </types>
   <types xsi:type="metamodel:Entity" name="ItemType"/>
