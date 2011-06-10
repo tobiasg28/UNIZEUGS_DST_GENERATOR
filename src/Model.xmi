@@ -61,13 +61,13 @@
       <annotations annotationType="ManyToOne"/>
     </attributes>
     <attributes name="resources" type="//@types.19" list="true">
-      <annotations/>
+      <annotations cascade="ALL"/>
     </attributes>
     <attributes name="troops" type="//@types.11" list="true">
-      <annotations mappedBy="//@types.11/@attributes.4"/>
+      <annotations mappedBy="//@types.11/@attributes.4" cascade="ALL"/>
     </attributes>
     <attributes name="bases" type="//@types.18" list="true">
-      <annotations mappedBy="//@types.18/@attributes.2"/>
+      <annotations mappedBy="//@types.18/@attributes.2" cascade="ALL"/>
     </attributes>
   </types>
   <types xsi:type="metamodel:Entity" name="GameStep">

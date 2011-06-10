@@ -39,6 +39,7 @@
 		import java.io.Serializable;
 		import javax.persistence.*;
 		import java.util.List;
+		import java.util.ArrayList;
 	
 		@Entity
 		@Table(name = "swag_«name.toLowerCase()»")
@@ -75,7 +76,7 @@
 					return «f.name»;
 				}
 				«ELSE»
-				private List<«f.type.name»> «f.name»;
+				private List<«f.type.name»> «f.name» = new ArrayList<«f.type.name»>();
 				
 				public void «f.setter()»(List<«f.type.name»> «f.name») {
 					this.«f.name» = «f.name»;
