@@ -126,7 +126,7 @@
       <annotations annotationType="ManyToOne"/>
     </attributes>
     <attributes name="base" type="//@types.18">
-      <annotations annotationType="OneToOne" cascade="ALL"/>
+      <annotations annotationType="OneToOne" mappedBy="//@types.18/@attributes.3" cascade="ALL"/>
     </attributes>
     <attributes name="troops" type="//@types.11" list="true">
       <annotations mappedBy="//@types.11/@attributes.5" unique="false" cascade="ALL"/>
@@ -183,7 +183,7 @@
       <annotations annotationType="ManyToOne"/>
     </attributes>
     <attributes name="square" type="//@types.13">
-      <annotations annotationType="OneToOne" mappedBy="//@types.13/@attributes.4"/>
+      <annotations annotationType="OneToOne"/>
     </attributes>
     <attributes name="starterBase" type="//@types.4"/>
     <attributes name="lastProductionStep" type="//@types.10">
