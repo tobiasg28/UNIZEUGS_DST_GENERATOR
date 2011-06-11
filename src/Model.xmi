@@ -128,6 +128,9 @@
     <attributes name="base" type="//@types.18">
       <annotations annotationType="OneToOne" cascade="ALL"/>
     </attributes>
+    <attributes name="troops" type="//@types.11" list="true">
+      <annotations mappedBy="//@types.11/@attributes.5" unique="false" cascade="ALL"/>
+    </attributes>
   </types>
   <types xsi:type="metamodel:Entity" name="ItemType"/>
   <types xsi:type="metamodel:Entity" name="CachedInvalidationEntry">
